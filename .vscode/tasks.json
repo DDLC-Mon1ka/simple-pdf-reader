@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Windows executable",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\build.ps1"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Check Python syntax",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "py_compile",
+        "app.py"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

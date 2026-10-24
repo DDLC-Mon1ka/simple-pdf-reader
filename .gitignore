@@ -1,0 +1,35 @@
+# Virtual environments
+.venv/
+.buildvenv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# PyInstaller output
+build/
+dist/
+*.spec
+
+# Local configuration and secrets
+.env
+.env.*
+api-config.json
+state.json
+*.pem
+*.key
+
+# Test artifacts
+*-test.pdf
+sample.pdf
+v*-ui-test.png
+ui-*.png
+*-summary-test.md
+*-export-test.md
+
+# Logs and editor/OS files
+*.log
+Thumbs.db
+.DS_Store
